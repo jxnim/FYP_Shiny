@@ -37,10 +37,10 @@ shinyUI(fluidPage(
                     "Customize Risk/Return" = "custom")),
       
       sliderInput("return", "Return:",
-                          min = 0, max = 20, value = 5)),
+                          min = 0, max = 20, value = 5),
     
       sliderInput("risk", "Risk:",
-                min = 0, max = 40, value = 5)),
+                min = 0, max = 40, value = 5),
     
       sliderInput("n", 
                   "Number of observations:", 
