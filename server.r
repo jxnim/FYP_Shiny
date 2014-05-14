@@ -7,7 +7,7 @@ shinyServer(function(input, output) {
   # called whenever the inputs change. The output functions defined 
   # below then all use the value computed from this expression
   
-  
+  a<-2
   data <- reactive({
     if(sector$gaming)
       a<-"jxnim"
