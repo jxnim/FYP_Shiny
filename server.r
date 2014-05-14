@@ -6,7 +6,11 @@ shinyServer(function(input, output) {
   # Reactive expression to generate the requested distribution. This is 
   # called whenever the inputs change. The output functions defined 
   # below then all use the value computed from this expression
+  
+  
   data <- reactive({
+    if(sector$technology)
+      a<-"jxnim"
     dist <- switch(input$dist,
                    norm = rnorm,
                    unif = runif,
@@ -31,7 +35,7 @@ shinyServer(function(input, output) {
   
   # Generate a summary of the data
   output$summary <- renderPrint({
-    summary(data())
+    summary(a)
   })
   
   # Generate an HTML table view of the data
