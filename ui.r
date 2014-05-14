@@ -21,7 +21,7 @@ shinyUI(fluidPage(
                            "Real Estate" = "realEstate",
                            "Food" = "food",
                            "Gaming" = "gaming"),c("technology","telco","banking","oilGas","realEstate",
-                                                  "food","gaming")),
+                                                  "food")),
       
       
       
