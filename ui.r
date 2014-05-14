@@ -20,7 +20,8 @@ shinyUI(fluidPage(
                            "Oil and Gas" = "oilGas",
                            "Real Estate" = "realEstate",
                            "Food" = "food",
-                           "Gaming" = "gaming"),c(TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE)),
+                           "Gaming" = "gaming"),c("technology","telco","banking","oilGas","realEstate",
+                                                  "food","gaming")),
       
       
       
