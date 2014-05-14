@@ -8,8 +8,9 @@ shinyServer(function(input, output) {
   # below then all use the value computed from this expression
   
   a<-2
+  a <- reactiveValues(input$sector == TRUE)
   data <- reactive({
-    a <- reactiveValues(input$sector == TRUE)
+    
     #if(input$sector.technology)
      # a<-"jxnim"
     dist <- switch(input$dist,
