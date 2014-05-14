@@ -9,7 +9,7 @@ shinyServer(function(input, output) {
   
   a<-2
   data <- reactive({
-    if(input$sector$technology)
+    if(input$sector.technology)
       a<-"jxnim"
     dist <- switch(input$dist,
                    norm = rnorm,
