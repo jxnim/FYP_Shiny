@@ -11,11 +11,17 @@ shinyUI(fluidPage(
   # element to introduce extra vertical spacing
   sidebarLayout(
     sidebarPanel(
-      radioButtons("dist", "Distribution type:",
-                   c("Normal" = "norm",
-                     "Uniform" = "unif",
-                     "Log-normal" = "lnorm",
-                     "Exponential" = "exp")),
+      
+      checkboxGroupInput("inCheckboxGroup",
+                         "SGX Securities Sector:",
+                         c("All" = "all",
+                           "Telco" = "telco")),
+      
+      #radioButtons("dist", "SGX Securities Sector:",
+       #            c("All" = "all",
+        #             "Telco" = "unif",
+         #            "Banking" = "lnorm",
+          #           "Exponential" = "exp")),
       br(),
       
       sliderInput("n", 
