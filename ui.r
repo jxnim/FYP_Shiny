@@ -12,16 +12,15 @@ shinyUI(fluidPage(
   sidebarLayout(
     sidebarPanel(
       
-      checkboxGroupInput("inCheckboxGroup",
-                         "SGX Securities Industry Sector:",
-                         c("All" = "all",
-                           "Technology" = "technology",
+      checkboxGroupInput("sector",
+                         "Preferred SGX Securities Industry Sector:",
+                         c("Technology" = "technology",
                            "Telco" = "telco",
                            "Banking" = "banking",
                            "Oil and Gas" = "oilGas",
                            "Real Estate" = "realEstate",
                            "Food" = "food",
-                           "Gaming" = "gaming")),
+                           "Gaming" = "gaming"),c(TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE)),
       
       
       
