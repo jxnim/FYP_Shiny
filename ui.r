@@ -23,9 +23,7 @@ shinyUI(fluidPage(
                            "Food" = "food",
                            "Gaming" = "gaming")),
       
-      selectInput("methodSelect", "Select method:",
-                  c("STI Index tracking" = "tracking",
-                    "Customize Risk/Return " = "custom")),
+      
       
       #radioButtons("dist", "SGX Securities Sector:",
        #            c("All" = "all",
@@ -33,6 +31,10 @@ shinyUI(fluidPage(
          #            "Banking" = "lnorm",
           #           "Exponential" = "exp")),
       br(),
+      
+      selectInput("methodSelect", "Select method:",
+                  c("STI Index tracking" = "tracking",
+                    "Customize Risk/Return" = "custom")),
       
       #sliderInput("n", 
        #           "Number of observations:", 
