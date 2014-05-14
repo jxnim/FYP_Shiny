@@ -36,8 +36,11 @@ shinyUI(fluidPage(
                   c("STI Index tracking" = "tracking",
                     "Customize Risk/Return" = "custom")),
       
-      disable(sliderInput("return", "Return:",
+      sliderInput("return", "Return:",
                           min = 0, max = 20, value = 5)),
+    
+      sliderInput("risk", "Risk:",
+                min = 0, max = 40, value = 5)),
     
       sliderInput("n", 
                   "Number of observations:", 
