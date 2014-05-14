@@ -36,11 +36,11 @@ shinyUI(fluidPage(
                   c("STI Index tracking" = "tracking",
                     "Customize Risk/Return" = "custom")),
       
-      #sliderInput("n", 
-       #           "Number of observations:", 
-        #          value = 500,
-         #         min = 1, 
-          #        max = 1000)
+      sliderInput("n", 
+                  "Number of observations:", 
+                  value = 500,
+                  min = 1, 
+                  max = 1000)
     ),
     
     # Show a tabset that includes a plot, summary, and table view
